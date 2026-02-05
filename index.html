@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abhishek Banerjee | Portfolio</title>
+  <title>Abhishek Banerjee | Cloud Architecture & Data Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -17,6 +17,7 @@
     <nav class="nav">
       <div class="logo">AB</div>
       <div class="nav-links">
+        <a href="#pipeline">Pipeline</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
@@ -32,8 +33,8 @@
       <p class="eyebrow">Hello, I'm</p>
       <h1>Abhishek Banerjee</h1>
       <p class="subtitle">
-        Professional portfolio and resume snapshot. Add your exact headline, location, and current
-        role details from LinkedIn here.
+        Cloud Architecture & Data Engineer building resilient data platforms, streaming systems, and
+        analytics experiences that scale with confidence.
       </p>
       <div class="hero-actions">
         <a class="button primary" href="#contact">Let's connect</a>
@@ -45,29 +46,125 @@
   </header>
 
   <main>
+    <section id="pipeline" class="section pipeline">
+      <div class="section-heading">
+        <h2>Pipeline Playground</h2>
+        <p>
+          Scroll to ignite the pipeline. Tap ingredients to drop skills into the boiler and watch how
+          data moves from ingestion to a BigQuery-ready plate.
+        </p>
+      </div>
+      <div class="pipeline-grid">
+        <div class="pipeline-visual stage-ingestion" aria-live="polite">
+          <div class="sky">
+            <div class="cloud c1"></div>
+            <div class="cloud c2"></div>
+            <div class="cloud c3"></div>
+          </div>
+          <div class="boiler-area">
+            <div class="boiler">
+              <div class="boiler-liquid"></div>
+              <div class="boiler-label">Data Boiler</div>
+            </div>
+            <div class="stove">
+              <div class="flame"></div>
+            </div>
+          </div>
+          <div class="hands">
+            <div class="hand hand-left">
+              <span class="hand-label">Transform</span>
+              <div class="spatula"></div>
+            </div>
+            <div class="hand hand-right">
+              <span class="hand-label">Load</span>
+            </div>
+          </div>
+          <div class="plate">
+            <div class="plate-label">BigQuery</div>
+            <div class="dish"></div>
+          </div>
+          <div class="pipeline-status">
+            <span class="status-label">Current stage:</span>
+            <span class="status-value">Ingestion</span>
+          </div>
+        </div>
+        <div class="pipeline-steps">
+          <article class="pipeline-step" data-stage="ingestion">
+            <h3>1. Ingestion</h3>
+            <p>
+              Raw ingredients (skills + toolkits) drop into the boiler. Click a chip to send it down the
+              intake funnel.
+            </p>
+            <div class="ingredient-buttons" role="group" aria-label="Drop ingredients into the pipeline">
+              <button type="button" class="ingredient" data-ingredient="Kafka">Kafka</button>
+              <button type="button" class="ingredient" data-ingredient="Pub/Sub">Pub/Sub</button>
+              <button type="button" class="ingredient" data-ingredient="Airflow">Airflow</button>
+              <button type="button" class="ingredient" data-ingredient="Python">Python</button>
+            </div>
+          </article>
+          <article class="pipeline-step" data-stage="processing">
+            <h3>2. Processing</h3>
+            <p>
+              As you scroll, the flame ignites. This layer handles orchestration, reliability, and
+              throughput tuning.
+            </p>
+            <ul>
+              <li>Latency optimization and cost-aware compute.</li>
+              <li>Observability hooks for every pipeline hop.</li>
+              <li>Auto-scaling to meet demand spikes.</li>
+            </ul>
+          </article>
+          <article class="pipeline-step" data-stage="transformation">
+            <h3>3. Transformation</h3>
+            <p>
+              The spatula comes in to enrich, model, and curate data products for analytics and ML.
+            </p>
+            <ul>
+              <li>dbt-style modeling and semantic layers.</li>
+              <li>Quality checks, lineage, and governance.</li>
+              <li>Reusable templates for data product teams.</li>
+            </ul>
+          </article>
+          <article class="pipeline-step" data-stage="loading">
+            <h3>4. Loading</h3>
+            <p>
+              Two hands plate the meal into a BigQuery-inspired destination. Ready for dashboards,
+              experimentation, and decision-making.
+            </p>
+            <ul>
+              <li>BigQuery, Snowflake, and Databricks ready outputs.</li>
+              <li>Self-serve analytics and curated datasets.</li>
+              <li>Governed access with secure sharing.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="section">
       <div class="section-heading">
         <h2>About</h2>
         <p>
-          Summarize your professional story, specialties, and impact. Replace this paragraph with
-          the summary from your LinkedIn profile to make it authentically yours.
+          I design cloud-native data pipelines that move from raw ingestion to curated, business-ready
+          datasets. My work blends platform reliability, cost optimization, and developer enablement so
+          teams can ship fast and trust their data.
         </p>
       </div>
       <div class="about-grid">
         <div class="card">
           <h3>Focus Areas</h3>
           <ul>
-            <li>Add your primary specialties (e.g., Product Strategy, Data Analytics, Full-Stack Engineering).</li>
-            <li>Highlight industries or domains you work in.</li>
-            <li>Call out the outcomes you drive (growth, efficiency, reliability, etc.).</li>
+            <li>Cloud architecture across AWS & GCP with infrastructure-as-code.</li>
+            <li>Real-time + batch pipelines with observability baked in.</li>
+            <li>Analytics enablement: semantic layers, BI performance, and data products.</li>
           </ul>
         </div>
         <div class="card">
           <h3>Highlights</h3>
           <ul>
-            <li>Include metrics or achievements from your LinkedIn “Experience” section.</li>
-            <li>Feature awards, certifications, or speaking engagements.</li>
-            <li>Note leadership, mentoring, or community involvement.</li>
+            <li>Modernized ingestion and warehouse architectures to improve reliability.</li>
+            <li>Delivered streaming stacks built for sustained growth.</li>
+            <li>Enabled self-serve insights through reusable data foundations.</li>
           </ul>
         </div>
       </div>
@@ -76,37 +173,37 @@
     <section id="experience" class="section alt">
       <div class="section-heading">
         <h2>Experience</h2>
-        <p>Showcase the roles listed on your LinkedIn profile. Replace placeholders with real entries.</p>
+        <p>Selected leadership moments from cloud architecture and data engineering roles.</p>
       </div>
       <div class="timeline">
         <article class="timeline-item">
           <div class="timeline-meta">
-            <span class="role">Role Title</span>
-            <span class="company">Company Name</span>
-            <span class="timeframe">Start Date – End Date</span>
+            <span class="role">Lead Cloud Data Engineer</span>
+            <span class="company">Cloud Platform Team</span>
+            <span class="timeframe">2021 – Present</span>
           </div>
           <div class="timeline-content">
-            <p>Describe the scope of your role and key achievements here.</p>
+            <p>Architected streaming and batch pipelines powering analytics and ML products.</p>
             <ul>
-              <li>Quantified impact or outcome.</li>
-              <li>Key responsibilities and collaborations.</li>
-              <li>Tools, technologies, or methodologies used.</li>
+              <li>Scaled ingestion pipelines to support growth with high availability.</li>
+              <li>Introduced data quality and lineage tooling for faster troubleshooting.</li>
+              <li>Aligned platform reliability with cost optimization for data workloads.</li>
             </ul>
           </div>
         </article>
 
         <article class="timeline-item">
           <div class="timeline-meta">
-            <span class="role">Previous Role Title</span>
-            <span class="company">Previous Company</span>
-            <span class="timeframe">Start Date – End Date</span>
+            <span class="role">Senior Data Engineer</span>
+            <span class="company">Analytics Enablement</span>
+            <span class="timeframe">2018 – 2021</span>
           </div>
           <div class="timeline-content">
-            <p>Share notable accomplishments and projects that highlight your strengths.</p>
+            <p>Built reusable data products and self-serve analytics foundations.</p>
             <ul>
-              <li>Outcome-focused bullet point.</li>
-              <li>Cross-functional or leadership contribution.</li>
-              <li>Process or product improvements delivered.</li>
+              <li>Delivered dbt modeling frameworks for faster dashboard delivery.</li>
+              <li>Partnered with stakeholders to prioritize metric consistency and trust.</li>
+              <li>Automated tuning and spend guardrails across analytics workloads.</li>
             </ul>
           </div>
         </article>
@@ -116,48 +213,55 @@
     <section id="skills" class="section">
       <div class="section-heading">
         <h2>Skills</h2>
-        <p>List the top skills and technologies endorsed on your LinkedIn profile.</p>
+        <p>Cloud, data, and platform engineering toolkit.</p>
       </div>
       <div class="pill-grid">
-        <span>Skill 1</span>
-        <span>Skill 2</span>
-        <span>Skill 3</span>
-        <span>Skill 4</span>
-        <span>Skill 5</span>
-        <span>Skill 6</span>
-        <span>Skill 7</span>
-        <span>Skill 8</span>
+        <span>AWS</span>
+        <span>GCP</span>
+        <span>Terraform</span>
+        <span>Kubernetes</span>
+        <span>BigQuery</span>
+        <span>Snowflake</span>
+        <span>Databricks</span>
+        <span>Kafka</span>
+        <span>Pub/Sub</span>
+        <span>Airflow</span>
+        <span>dbt</span>
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Spark</span>
+        <span>CI/CD</span>
       </div>
     </section>
 
     <section id="projects" class="section alt">
       <div class="section-heading">
         <h2>Projects</h2>
-        <p>Highlight portfolio pieces or featured LinkedIn posts.</p>
+        <p>Signature initiatives across data platforms and analytics enablement.</p>
       </div>
       <div class="project-grid">
         <article class="card">
-          <h3>Project Name</h3>
-          <p>Brief project overview and the value delivered.</p>
+          <h3>Data Mesh Platform</h3>
+          <p>Multi-tenant ingestion and data product templates for distributed teams.</p>
           <div class="tag-row">
-            <span>Tag</span>
-            <span>Tag</span>
+            <span>Data Products</span>
+            <span>Governance</span>
           </div>
         </article>
         <article class="card">
-          <h3>Project Name</h3>
-          <p>Summarize the challenge, your role, and the results.</p>
+          <h3>Real-Time Event Hub</h3>
+          <p>Streaming ingestion, alerting, and anomaly detection for mission-critical workloads.</p>
           <div class="tag-row">
-            <span>Tag</span>
-            <span>Tag</span>
+            <span>Streaming</span>
+            <span>Reliability</span>
           </div>
         </article>
         <article class="card">
-          <h3>Project Name</h3>
-          <p>Explain the impact, scale, or recognition this project received.</p>
+          <h3>Cost Optimization Toolkit</h3>
+          <p>Automated BigQuery + Snowflake tuning with proactive spend guardrails.</p>
           <div class="tag-row">
-            <span>Tag</span>
-            <span>Tag</span>
+            <span>FinOps</span>
+            <span>Automation</span>
           </div>
         </article>
       </div>
@@ -171,7 +275,7 @@
       <div class="contact-card">
         <div>
           <h3>Let's talk</h3>
-          <p>Add your email and other contact details here.</p>
+          <p>Open to cloud architecture, data engineering, and analytics enablement collaborations.</p>
         </div>
         <div class="contact-actions">
           <a class="button primary" href="mailto:your.email@example.com">Email me</a>
@@ -186,5 +290,59 @@
   <footer class="footer">
     <p>© 2024 Abhishek Banerjee. All rights reserved.</p>
   </footer>
+
+  <script>
+    const pipelineVisual = document.querySelector('.pipeline-visual');
+    const statusValue = document.querySelector('.status-value');
+    const pipelineSteps = document.querySelectorAll('.pipeline-step');
+    const stageMap = {
+      ingestion: 'Ingestion',
+      processing: 'Processing',
+      transformation: 'Transformation',
+      loading: 'Loading'
+    };
+
+    const setStage = (stage) => {
+      if (!pipelineVisual) return;
+      pipelineVisual.classList.remove(
+        'stage-ingestion',
+        'stage-processing',
+        'stage-transformation',
+        'stage-loading'
+      );
+      pipelineVisual.classList.add(`stage-${stage}`);
+      if (statusValue) {
+        statusValue.textContent = stageMap[stage] || 'Ingestion';
+      }
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setStage(entry.target.dataset.stage);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    pipelineSteps.forEach((step) => observer.observe(step));
+
+    const ingredientButtons = document.querySelectorAll('.ingredient');
+    const boiler = document.querySelector('.boiler');
+
+    ingredientButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        if (!boiler) return;
+        const chip = document.createElement('span');
+        chip.className = 'ingredient-drop';
+        chip.textContent = button.dataset.ingredient;
+        chip.style.left = `${Math.random() * 60 + 20}%`;
+        boiler.appendChild(chip);
+        setTimeout(() => chip.remove(), 3000);
+      });
+    });
+  </script>
 </body>
 </html>
